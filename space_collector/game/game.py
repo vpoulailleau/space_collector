@@ -54,6 +54,7 @@ class Game:
 
     def start(self) -> None:
         self.start_time = perf_counter()
+        self.last_update_time = self.start_time
 
     def manage_command(self, player_id: int, command: str) -> str:
         if player_id >= len(self.players):
